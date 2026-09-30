@@ -7,7 +7,12 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-dioxus = { version = "0.7.1", features = ["router", "fullstack"] }
+chrono = "0.4"
+dioxus = { version = "0.7.10", features = ["router", "fullstack"] }
+futures-channel = "0.3.34"
+futures-util = "0.3.34"
+reqwest = { version = "0.13.5", features = ["stream"] }
+tokio = { version = "1.53.1", features = ["full"] }
 
 [features]
 default = ["desktop"]
